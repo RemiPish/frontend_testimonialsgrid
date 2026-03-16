@@ -1,0 +1,162 @@
+$footer-padding: 16px;
+$footer-a-focus-color: #005fcc;
+$border-radius-card: 8px;
+$color-attribution: hsl(228, 45%, 44%);
+$grey-500: #48556A;
+$grey-400: #676D7E;
+$grey-200: #CFCFCF;
+$grey-100: #E7EAEE;
+$darkblue: #19202D;
+$purple-50: #EDE4FF;
+$purple-300: #A775F1;
+$purple-500: #733FC8;
+$black: #121212;
+$white: #FFFFFF;
+
+$border-radius-300: 24px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: $grey-200;
+    font-size: 15px;
+}
+
+h2,
+p,
+blockquote {
+    margin: unset;
+}
+
+.testimonials {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2vw;
+    margin-block-start: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+    padding: 2em;
+
+    &--daniel {
+        background-color: $purple-500;
+        color: $grey-100;
+    }
+
+    &--jonathan {
+        background-color: $grey-500;
+        color: $grey-100;
+    }
+
+    &--patrick {
+        background-color: $darkblue;
+        color: $grey-100;
+    }
+
+    &--jeanette,
+    &--kira {
+        background-color: $white;
+        color: $grey-400;
+    }
+
+    &__author {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        div {
+            align-self: center;
+        }
+    }
+
+    &__avatar {
+        border-radius: 50%;
+
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+    }
+}
+
+.avatarborder {
+    border: 5px solid $purple-300;
+}
+
+footer {
+    display: none;
+    padding: $footer-padding;
+}
+
+.attribution {
+    font-size: clamp(0.875rem, 1.4vw, 1rem);
+    text-align: center;
+}
+
+.attribution a {
+    color: $color-attribution;
+}
+
+footer a:focus-visible {
+    outline: $footer-a-focus-color;
+    outline-offset: 2px;
+}
+
+@media (min-width: 1100px) {
+    .testimonials {
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .testimonial {
+        &--daniel {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        &--jonathan {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        &--kira {
+            order: 3;
+            grid-column: 4;
+            grid-row: 1 / 3;
+        }
+
+        &--jeanette {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        &--patrick {
+            grid-column: 2 / 4;
+            grid-row: 2;
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .testimonials{
+        width: 80vw;
+    }
+}
