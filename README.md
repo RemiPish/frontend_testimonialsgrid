@@ -20,7 +20,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
- Live Site URL: [Vercel](hhttps://frontend-fourcardfeature.vercel.app/)
+ Live Site URL: [Vercel](https://frontend-testimonialsgrid.vercel.app/)
 
 ## My process
 
