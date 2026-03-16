@@ -11,9 +11,9 @@ body {
   margin: 0;
   padding: 1rem;
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: "Barlow", sans-serif;
   background-color: #CFCFCF;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 h2,
@@ -72,14 +72,20 @@ blockquote {
 .testimonial__author div {
   align-self: center;
 }
+.testimonial__author img {
+  width: 2rem;
+}
+.testimonial__quote {
+  font-size: 0.75rem;
+}
 .testimonial__avatar {
   border-radius: 50%;
 }
 .testimonial h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .testimonial__title {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .avatarborder {

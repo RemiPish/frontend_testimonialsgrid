@@ -28,9 +28,9 @@ body {
     margin: 0;
     padding: 1rem;
     min-height: 100vh;
-    font-family: "Poppins", sans-serif;
+    font-family: "Barlow", sans-serif;
     background-color: $grey-200;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 h2,
@@ -94,6 +94,13 @@ blockquote {
         div {
             align-self: center;
         }
+        img {
+            width: 2rem;
+        }
+    }
+
+    &__quote{
+        font-size: 0.75rem;
     }
 
     &__avatar {
@@ -102,11 +109,11 @@ blockquote {
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     &__title {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
