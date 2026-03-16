@@ -41,6 +41,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - Usage of SCSS
 - Mobile-first styling
 - Grid usage for cards
+- Adding invisible header to section for Screen Reader (SEO)
 
 ## Author
 
